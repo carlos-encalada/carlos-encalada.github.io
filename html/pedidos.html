@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="../index.html"><img src="../img/logo.png" alt="cocina-con-samira-logo" class="logo"></a>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="libro.html">Libro</a>
+                <a href="precios.html">Precios</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="receta-de-la-semana.html">Receta de la semana</a>
+            </nav>
+        </div>
+    </header>
+    <section id="main-content">
+        <div class="contenedor">
+                <div class="texto">
+                <h2 class="h2-texto">Haz tu pedido:</h2>
+                <form action="enviar.php" method="get" doctype="text/plain">
+                    <fieldset class="grid__container">
+                            <div class="grid__item">
+                                <label for="nom">Nombre:</label>
+                                <input type="text" id="nombre" required placeholder="Nombre completo"> 
+                                <label for="tel">Teléfono:</label>
+                                <input type="tel" id="tel" placeholder="Teléfono con prefijo" required> 
+                                <label for="dir">Dirección:</label>
+                                <input type="text" id="dir" required placeholder="Dirección">
+                                <label for="dir">E-mail:</label>
+                                <input type="mail" id="email"  placeholder="E-mail" required>
+                            </div>
+                            <div class="grid__item">
+                                <label for="pedido">Ingrese cantidad y presentación de libros deseados:</label> 
+                            </div>
+                            <div class="grid__item">
+                            <div class="textarea__container">
+                                <textarea name="orden" id="orden" cols="30" rows="10" placeholder="Levante su pedido" id="comentarios__box"></textarea>
+                                </div>
+                            <div class="div__buttons">
+                                <input type="submit" value="Enviar pedido" id="boton__1">
+                                <input type="reset" value="Borrar todo" id="boton__2">
+                            </div>
+                            </div>
+                            </div>
+                    </fieldset>
+                </form>
+                </div>
+        
+        </div>
+        
+    </section>
+    <footer>
+        <div class="contenedor">
+            <h3 class="footer__text">Todos los derechos reservados. &copyCocina con Samira.</h3>
+        </div>
+    </footer>
+</body>
+</html>
