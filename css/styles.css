@@ -15,18 +15,8 @@
     box-sizing: border-box;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "header-container"
-      "main-container"
-      "footer-container";
-  }
 
- 
+
   body {
     background-position: center;
     background-size: cover;
@@ -34,14 +24,21 @@
     background-image: url(../img/lebanon.jpg);
 }
 
- 
+
 /*--------------------------------------------------NAVBAR---------------------------------------------------*/
 nav ul li a {
     color: white !important;
     font-weight: bolder !important;
     text-transform: uppercase !important;
 }
+
+nav ul li a:hover {
+    color: var(--verdeMedio) !important;
+}
+
 /*--------------------------------------------------------------------------------------------------------------*/
+
+
 
 .color-resaltado{
     color:rgb(148, 88, 88);
@@ -69,11 +66,97 @@ nav ul li a {
     color: white;
 }
 
+.cedros img{
+    width:50px;
+    animation: cedro 7s linear infinite;
+}
 
+.cedros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes cedro {
+    0% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+    50% {
+        opacity: .5;
+    }
+    70% {
+
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: .5;
+    }
+}
+
+.cedros img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.cedros img:nth-child(2){
+    animation-delay: 1s;
+}
+
+.cedros img:nth-child(3){
+    animation-delay: 3s;
+}
+
+.cedros img:nth-child(4){
+    animation-delay: 4.5s;
+}
+
+.cedros img:nth-child(5){
+    animation-delay: 2.5s;
+}
+
+.cedros img:nth-child(6){
+    animation-delay: 6s;
+}
+
+.cedros img:nth-child(7){
+    animation-delay: 7s;
+}
 /*---------------------------Libro--------------------------------*/
 
 
 /*---------------------------Precios--------------------------------*/
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #e6e2f3 0%,
+    #2a9c9c 29%,
+    #4e7975 67%,
+    #a86f67 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 .card {
     margin-right: 60px;
     margin-bottom: 150px;
@@ -90,6 +173,14 @@ nav ul li a {
     background-color: var(--verdeFuerte) !important;
 }
 
+.presentaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /*------------------------------------PEDIDOS----------------------------------------------------*/
 
 .form__box {
@@ -97,7 +188,7 @@ nav ul li a {
     position: relative;
     width: 100px;
     border-radius: 20px;
-   }
+}
 
 form {
     width: 400px;
@@ -210,4 +301,16 @@ iframe {
     height: 400px;
 }
 
+/*--------------------------footer---------------------------------*/
+
+.copyright {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .card:hover {
+        transform:  scale(1.1);
+    }
+}
 
