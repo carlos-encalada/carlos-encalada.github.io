@@ -1,0 +1,31 @@
+
+/*Main*/
+.color-resaltado{
+    color:rgb(148, 88, 88);
+}
+
+
+.header-container { 
+    grid-area: header-container; 
+}
+
+
+.main-container { 
+    grid-area: main-container; 
+}
+
+#main-content .contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#main-content p{
+    text-align: justify;
+    background: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.cedros {
+    display: none;
+}

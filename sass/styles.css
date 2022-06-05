@@ -1,0 +1,308 @@
+/*vars*/
+/*---------------nav*-------------------*/
+nav a {
+  color: white !important;
+  font-weight: bolder !important;
+  text-transform: uppercase !important;
+}
+
+/*Main*/
+.color-resaltado {
+  color: rgb(148, 88, 88);
+}
+
+.header-container {
+  grid-area: header-container;
+}
+
+.main-container {
+  grid-area: main-container;
+}
+
+#main-content .contenedor {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#main-content p {
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.cedros {
+  display: none;
+}
+
+/*-----------------------------PRECIOS-----------------------------*/
+.card {
+  margin-right: 60px;
+  margin-bottom: 150px;
+  margin-top: 40px;
+  width: 200px !important;
+}
+
+#comprar {
+  background-color: blanchedalmond !important;
+  font-weight: bolder;
+}
+
+.presentaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*-------MEDIA QUERIES--------*/
+@media screen and (min-width: 768px) {
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  #comprar:hover {
+    background-color: #048c74 !important;
+  }
+
+  nav a:hover {
+    color: #04b39b !important;
+  }
+
+  .animate-charcter {
+    background-image: linear-gradient(-225deg, #e6e2f3 0%, #2a9c9c 29%, #4e7975 67%, #a86f67 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: textclip 2s linear infinite;
+            animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+  }
+
+  @-webkit-keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .cedros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: -70px;
+  }
+  .cedros img {
+    width: 50px;
+    -webkit-animation: cedro 6s linear infinite;
+            animation: cedro 6s linear infinite;
+  }
+
+  @-webkit-keyframes cedro {
+    0% {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-90vh);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes cedro {
+    0% {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-90vh);
+      opacity: 0.5;
+    }
+  }
+  .cedros img:nth-child(1) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .cedros img:nth-child(2) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .cedros img:nth-child(3) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .cedros img:nth-child(4) {
+    -webkit-animation-delay: 4.5s;
+            animation-delay: 4.5s;
+  }
+  .cedros img:nth-child(5) {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .cedros img:nth-child(6) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+  .cedros img:nth-child(7) {
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+  }
+}
+/*------------------------------------PEDIDOS----------------------------------------------------*/
+.form__box {
+  width: 100%;
+  position: relative;
+  width: 100px;
+  border-radius: 20px;
+}
+
+form {
+  width: 400px;
+  background-color: gray;
+  font-size: 12px;
+}
+form h4 {
+  color: #e6afad;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.h2-texto {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label {
+  color: white;
+  width: 150px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  height: 48px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+#nombre, #tel, #dir, #email {
+  width: 200px;
+  max-width: 300px;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  margin-right: auto;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.div__buttons {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  right: -25px;
+}
+
+#boton__1 {
+  padding: 2px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+}
+
+#boton__1:hover {
+  border: 1px solid black;
+  background: #e6afad;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#boton__2 {
+  padding: 2px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+}
+
+#boton__2:hover {
+  border: 1px solid black;
+  background: #e6afad;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.hero__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #e6afad;
+  padding: 12px 34px;
+  font-size: 14px;
+  font-weight: 600;
+  background: blanchedalmond;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  border: 1px solid #e6afad;
+  background: #e6afad;
+  transition: 1s;
+}
+
+/*-------RECETA SEMANA-------*/
+iframe {
+  display: inline-block;
+  width: 270px;
+  height: 400px;
+}
+
+/*--------------------------footer---------------------------------*/
+.copyright {
+  font-weight: bolder !important;
+  font-size: 12px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif, !important;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url("/img/lebanon.jpg");
+}/*# sourceMappingURL=styles.css.map */
