@@ -8,15 +8,16 @@
 @import '_recetaSemana';
 @import '_footer';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: {
-        family: 'Montserrat', sans-serif, !important;
-        
+
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font: {
+            family: 'Montserrat', sans-serif, !important;
+            
+        }
     }
-}
 
 body {
     background-position: center;
@@ -25,7 +26,10 @@ body {
     background-image: url("/img/lebanon.jpg");
   }
 
-
+  $colores: (
+    formulario: $verdeBajo,
+    h3: $verdeFuerte,
+);
 
 
 

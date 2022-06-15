@@ -4,67 +4,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta name=" description" content="Haz tu pedido del libro Cocina con Samira, no te quedes sin el tuyo.">
+    <meta name="keywords" content="cocina, libro, libanesa, libanes, recetas, comida, youtube, content, video, contenido, pasta dura, pasta suave, ebook, pedidos, casa, envio">
+    <link rel="stylesheet" href="../sass/styles.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/da51c08dc6.js" crossorigin="anonymous"></script>
+  </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <a href="../index.html"><img src="../img/logo.png" alt="cocina-con-samira-logo" class="logo"></a>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="libro.html">Libro</a>
-                <a href="precios.html">Precios</a>
-                <a href="pedidos.html">Pedidos</a>
-                <a href="receta-de-la-semana.html">Receta de la semana</a>
-            </nav>
-        </div>
-    </header>
-    <section id="main-content">
-        <div class="contenedor">
-                <div class="texto">
-                <h2 class="h2-texto">Haz tu pedido:</h2>
-                <form action="enviar.php" method="get" doctype="text/plain">
-                    <fieldset class="grid__container">
-                            <div class="grid__item">
-                                <label for="nom">Nombre:</label>
-                                <input type="text" id="nombre" required placeholder="Nombre completo"> 
-                                <label for="tel">Teléfono:</label>
-                                <input type="tel" id="tel" placeholder="Teléfono con prefijo" required> 
-                                <label for="dir">Dirección:</label>
-                                <input type="text" id="dir" required placeholder="Dirección">
-                                <label for="dir">E-mail:</label>
-                                <input type="mail" id="email"  placeholder="E-mail" required>
+        <!-- Nav -->
+        <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #d6aaaa;" >
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="cocina-con-samira-logo" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills me-auto mb-2 mb-lg-0 end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="libro.html">Libro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="precios.html">Precios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pedidos.html">Pedidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="receta-de-la-semana.html">Receta de la semana</a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+<main>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h1 class="haz_pedido p-4 d-flex justify-content-center text-uppercase">Realiza tu pedido</h1>
+                        <p>Llenar la información requerida.</p>
+                        <form class="requires-validation">
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Nombre completo:" required>
                             </div>
-                            <div class="grid__item">
-                                <label for="pedido">Ingrese cantidad y presentación de libros deseados:</label> 
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail:" required>
                             </div>
-                            <div class="grid__item">
-                            <div class="textarea__container">
-                                <textarea name="orden" id="orden" cols="30" rows="10" placeholder="Levante su pedido" id="comentarios__box"></textarea>
-                                </div>
-                            <div class="div__buttons">
-                                <input type="submit" value="Enviar pedido" id="boton__1">
-                                <input type="reset" value="Borrar todo" id="boton__2">
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="direc" placeholder="Dirección de envío:" required>
+                             </div>
+
+                           <div class="col-md-12">
+                                <select class="form-select mt-3 mb-3" required>
+                                      <option selected disabled value="">Presentación</option>
+                                      <option value="pastadura">Pasta dura</option>
+                                      <option value="pastasuave">Pasta suave</option>
+                                      <option value="elec">Electrónico</option>
+                               </select>
+                           </div>
+
+                           <div class="col-md-12">
+                            <input class="form-control" type="number" name="cantidad" placeholder="Cantidad:" required>
+                           </div>
+
+                            <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" required>
+                            <label class="form-check-label">Confirmo que la información es correcta.</label>
                             </div>
+
+                            <div class="form-button mt-3 d-flex justify-content-around">
+                                <button id="submit" type="submit" class="btn btn-primary btn--enviar">Enviar</button>
+                                <button id="submit" type="reset" class="btn btn-primary btn--borrar">Borrar todo</button>
                             </div>
-                            </div>
-                    </fieldset>
-                </form>
+                        </form>
+                    </div>
                 </div>
-        
+            </div>
         </div>
-        
-    </section>
-    <footer>
-        <div class="contenedor">
-            <h3 class="footer__text">Todos los derechos reservados. &copyCocina con Samira.</h3>
-        </div>
-    </footer>
-</body>
-</html>
+    </div>
+</main>
+     <!-- Footer -->
+   
+     <div>
+      <footer class="text-center text-lg-start" style="background-color: #f3caca;">
+       <div class="container d-flex justify-content-center py-2">
+         <button type="button" class="btn  btn-lg btn-floating mx-2 red-fb">
+             <a href="https://www.facebook.com/imperdiblecomidalibanesa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+         </button>
+         <button  type="button" class="btn  btn-lg btn-floating mx-2 red-ws">
+             <a href="https://api.whatsapp.com/send?phone=52###############" target="_blank"><i class="fab fa-whatsapp"></i></a>
+         </button>
+         <button  type="button" class="btn  btn-lg btn-floating mx-2 red-ig">
+             <a href="https://www.instagram.com/cocinaconsamira" target="_blank"><i class="fab fa-instagram"></i></a>
+         </button>
+         </div>
+         <!-- Copyright -->
+         <div class=" d-flex justify-content-center text-center text-black p-3">
+           <p class="copyright">© Todos los derechos reservados. Cocina con Samira.</p>
+         </div>
+       </footer>
+     </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   </body>
+   </html>

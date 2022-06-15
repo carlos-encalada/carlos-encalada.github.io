@@ -2,6 +2,22 @@
 /*--------------------------footer---------------------------------*/
 
 .copyright {
+    color: $verdeFuerte;
     font-weight: bolder !important;
     font-size: 12px !important;
+}
+
+/* Map*/
+
+$red-social: (
+    fb: blue,
+    ws: green,
+    ig: violet
+);
+
+@each $nombre, $valor in $red-social {
+    .red-#{$nombre} {
+        color: $valor !important;
+    }
+
 }

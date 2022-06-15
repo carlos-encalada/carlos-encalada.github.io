@@ -1,4 +1,5 @@
     /*vars*/
+    /*Colores*/
         $verdeBajo:#04b39b;
         $verdeMedio:#04b39b;
         $verdeFuerte:#048c74;
@@ -6,5 +7,11 @@
         $verdeMusgo:#8c9c84;
         $rosaRojo: #e6afad;
         $grisFondo:#E6E2E1;
-    
-    
+        $grisAzul: #818699;
+        $blancoAlmendra: blanchedalmond;
+
+    /*Color Map Get*/
+
+    $colores: (
+        formulario: $verdeBajo,
+    );
