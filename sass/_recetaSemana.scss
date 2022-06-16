@@ -4,15 +4,3 @@ iframe {
 }
 
 
-/*mixin*/
-@mixin youtube {
-  display: inline-block;
-  padding:10px;
-  border: 1px solid green;
-}
-
-.youtube--blue{
-  @include btn;
-  background-color: green !important;
-}
-

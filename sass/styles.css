@@ -38,6 +38,7 @@ nav a {
 
 /*-----------------------------PRECIOS-----------------------------*/
 .card {
+  color: black !important;
   margin-right: 60px;
   margin-bottom: 150px;
   margin-top: 40px;
@@ -45,7 +46,7 @@ nav a {
 }
 
 #comprar {
-  background-color: blanchedalmond !important;
+  background-color: #048c74 !important;
   font-weight: bolder;
 }
 
@@ -54,6 +55,12 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.card-text {
+  color: red;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -299,19 +306,14 @@ iframe {
   height: 450px;
 }
 
-/*mixin*/
-.btn--danger {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: blue;
-}
-
 /*--------------------------footer---------------------------------*/
 .copyright {
-  color: #048c74;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #71997c;
   font-weight: bolder !important;
   font-size: 12px !important;
+  color: black;
 }
 
 /* Map*/

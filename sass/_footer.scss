@@ -2,9 +2,10 @@
 /*--------------------------footer---------------------------------*/
 
 .copyright {
-    color: $verdeFuerte;
+    @include copyright;
     font-weight: bolder !important;
     font-size: 12px !important;
+    color: black;
 }
 
 /* Map*/
@@ -19,5 +20,6 @@ $red-social: (
     .red-#{$nombre} {
         color: $valor !important;
     }
-
 }
+
+
