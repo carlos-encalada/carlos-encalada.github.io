@@ -179,6 +179,75 @@ nav a {
     -webkit-animation-delay: 7s;
             animation-delay: 7s;
   }
+
+  .form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+
+  .form-content .form-items {
+    background-color: #04b39b;
+    border: 3px solid blanchedalmond;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+  }
+
+  .form-content .form-items h3 {
+    color: black !important;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .form-content .form-items form-title {
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: blanchedalmond;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: blanchedalmond;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: blanchedalmond;
+    outline: none;
+    resize: none;
+    height: 120px;
+    transition: none;
+    margin-bottom: 14px;
+  }
 }
 /*------------------------------------PEDIDOS----------------------------------------------------*/
 .form-holder {
