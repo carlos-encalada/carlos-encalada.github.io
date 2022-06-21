@@ -2,6 +2,11 @@
 /*-------MEDIA QUERIES--------*/
 @media screen and (min-width: 768px) {
 
+  .precios {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
     .card:hover {
         transform:  scale(1.1);
     }
